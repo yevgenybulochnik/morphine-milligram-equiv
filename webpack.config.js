@@ -7,7 +7,8 @@ module.exports = {
     rules: [
       {
         test: /\.ts?$/,
-        use: 'ts-loader',
+        loader: 'ts-loader',
+        options: {configFile: 'tsconfig.webpack.json'},
         exclude: /node_modules/,
       },
     ],
@@ -18,7 +19,7 @@ module.exports = {
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
-    library: 'ascvdCalc'
+    // library: 'ascvdCalc'
   },
   // optimization: {
   //   minimize: false,
