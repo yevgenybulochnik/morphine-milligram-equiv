@@ -8,7 +8,7 @@ module.exports = {
       {
         test: /\.ts?$/,
         loader: 'ts-loader',
-        options: {configFile: 'tsconfig.webpack.json'},
+        options: {configFile: 'tsconfig.exclude.json'},
         exclude: /node_modules/,
       },
     ],
@@ -19,9 +19,7 @@ module.exports = {
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
-    // library: 'ascvdCalc'
+    libraryTarget: 'umd',
+    globalObject: 'this',
   },
-  // optimization: {
-  //   minimize: false,
-  // }
 };

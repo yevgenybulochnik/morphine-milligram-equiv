@@ -14,6 +14,10 @@
   },
   "scripts": {
     "test": "jest",
-    "build": "webpack"
-  }
+    "build": "tsc -m es6 -p tsconfig.exclude.json --outDir lib-esm && webpack"
+  },
+  "files": [
+    "dist",
+    "lib-esm"
+  ]
 }
