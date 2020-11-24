@@ -1,7 +1,7 @@
 {
-  "name": "ts-package-boilerplate",
+  "name": "morephine-milligram-equiv",
   "version": "1.0.0",
-  "main": "dist/bundle.js",
+  "main": "dist/mme.min.js",
   "types": "dist/index.d.ts",
   "license": "UNLICENSED",
   "devDependencies": {
