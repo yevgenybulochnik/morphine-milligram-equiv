@@ -1,6 +1,6 @@
 # Morphine Milligram Equivalents Calculation
 
-This is a javascript implementation of the morphine milligram equivalent calculation. It allows one to easily convert opioid prodcuts to morphine equivalents.
+This is a javascript implementation of the morphine milligram equivalent calculation. It allows one to easily convert opioid products to morphine equivalents.
 
 ### References
 - [MedCalc](https://www.mdcalc.com/morphine-milligram-equivalents-mme-calculator) example
@@ -59,15 +59,15 @@ Returns
 Products with conversion factors are listed in the guidelines, but only include
 
 ```
-  codeine,
-  fentanylTransdermal,
-  hydrocodone,
-  hydromorphone,
-  methadone,
-  morphine,
-  oxycodone,
-  oxymorphone,
-  tapentadol,
+  codeine
+  fentanylTransdermal
+  hydrocodone
+  hydromorphone
+  methadone
+  morphine
+  oxycodone
+  oxymorphone
+  tapentadol
 ```
 
 ### Tests
