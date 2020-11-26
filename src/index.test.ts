@@ -9,16 +9,22 @@ describe('Given opioid drug product calculate morphine equiv', () => {
       expected: { products: [{name: 'codeine', total: 9}], total: 9 }
     },
     {
+      name: 'fentanylTransdermal',
+      dose: 12.5,
+      frequency: 1,
+      expected: { products: [{name: 'fentanylTransdermal', total: 30}], total: 30 }
+    },
+    {
       name: 'hydrocodone',
       dose: 5,
       frequency: 4,
       expected: { products: [{name: 'hydrocodone', total: 20}], total: 20 }
     },
     {
-      name: 'oxycodone',
-      dose: 10,
+      name: 'hydromorphone',
+      dose: 2,
       frequency: 2,
-      expected: { products: [{name: 'oxycodone', total: 30}], total: 30 }
+      expected: { products: [{name: 'hydromorphone', total: 16}], total: 16 }
     },
     {
       name: 'methadone',
@@ -27,16 +33,28 @@ describe('Given opioid drug product calculate morphine equiv', () => {
       expected: { products: [{name: 'methadone', total: 240}], total: 240 }
     },
     {
-      name: 'fentanylTransdermal',
-      dose: 12.5,
-      frequency: 1,
-      expected: { products: [{name: 'fentanylTransdermal', total: 30}], total: 30 }
+      name: 'morphine',
+      dose: 5,
+      frequency: 2,
+      expected: { products: [{name: 'morphine', total: 10}], total: 10 }
+    },
+    {
+      name: 'oxycodone',
+      dose: 10,
+      frequency: 2,
+      expected: { products: [{name: 'oxycodone', total: 30}], total: 30 }
     },
     {
       name: 'oxymorphone',
       dose: 10,
       frequency: 2,
       expected: { products: [{name: 'oxymorphone', total: 60}], total: 60 }
+    },
+    {
+      name: 'tapentadol',
+      dose: 5,
+      frequency: 2,
+      expected: { products: [{name: 'tapentadol', total: 4}], total: 4 }
     }
   ];
 
@@ -68,6 +86,33 @@ describe('Given product array calculate individual product total + complete tota
         total: 50
       }
     },
+    {
+      products: [
+        {
+          name: 'hydromorphone',
+          dose: 2,
+          frequency: 2,
+        },
+        {
+          name: 'methadone',
+          dose: 15,
+          frequency: 2,
+        },
+        {
+          name: 'morphine',
+          dose: 5,
+          frequency: 2,
+        },
+      ],
+      expected: {
+        products: [
+          {name: 'hydromorphone', total: 16},
+          {name: 'methadone', total: 240},
+          {name: 'morphine', total: 10}
+        ],
+        total: 266,
+      }
+    }
   ]
 
   testCases.forEach((testCase) => {
