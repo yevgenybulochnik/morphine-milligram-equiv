@@ -1,5 +1,5 @@
 {
-  "name": "morephine-milligram-equiv",
+  "name": "morphine-milligram-equiv",
   "version": "1.0.0",
   "main": "dist/mme.min.js",
   "module": "lib-esm/index.js",
