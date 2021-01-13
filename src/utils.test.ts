@@ -1,4 +1,4 @@
-import { getScaleFactor, createRange } from '@src/utils'
+import { getScaleFactor, createRange } from './utils'
 
 
 describe('Given two numbers create range', () => {

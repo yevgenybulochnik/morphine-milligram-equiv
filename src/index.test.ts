@@ -1,4 +1,4 @@
-import { calculateMME } from '@src/index'
+import { calculateMME } from './index'
 
 describe('Given opioid drug product calculate morphine equiv', () => {
   const testCases: any[] = [

@@ -1,6 +1,6 @@
-import type { Opioids } from '@src/constants'
-import { conversionDict } from '@src/constants'
-import { getScaleFactor } from '@src/utils'
+import type { Opioids } from './constants'
+import { conversionDict } from './constants'
+import { getScaleFactor } from './utils'
 
 type ProductInput = {
   name: keyof typeof Opioids
