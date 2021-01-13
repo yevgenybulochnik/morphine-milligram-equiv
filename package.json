@@ -4,7 +4,7 @@
   "main": "dist/mme.min.js",
   "module": "lib-esm/index.js",
   "types": "dist/index.d.ts",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "devDependencies": {
     "jest": "^26.6.3",
     "ts-jest": "^26.4.4",
