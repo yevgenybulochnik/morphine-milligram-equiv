@@ -55,6 +55,12 @@ describe('Given opioid drug product calculate morphine equiv', () => {
       dose: 5,
       frequency: 2,
       expected: { products: [{name: 'tapentadol', total: 4}], total: 4 }
+    },
+    {
+      name: 'tramadol',
+      dose: 10,
+      frequency: 2,
+      expected: { products: [{name: 'tramadol', total: 4}], total: 4}
     }
   ];
 

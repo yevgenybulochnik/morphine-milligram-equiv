@@ -9,6 +9,7 @@ export enum Opioids {
   oxycodone,
   oxymorphone,
   tapentadol,
+  tramadol,
 }
 
 type OpioidKeys = {
@@ -54,5 +55,8 @@ export const conversionDict: ConversionDict = {
   },
   tapentadol: {
     factor: 0.4,
+  },
+  tramadol: {
+    factor: 0.2,
   }
 }

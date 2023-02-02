@@ -1,6 +1,6 @@
 {
   "name": "morphine-milligram-equiv",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/mme.min.js",
   "module": "lib-esm/index.js",
   "types": "dist/index.d.ts",
